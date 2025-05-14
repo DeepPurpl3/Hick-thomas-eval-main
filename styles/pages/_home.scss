@@ -193,6 +193,91 @@ main{
             margin: auto;
         }
     }
+    .winning{
+        background-color: #fff;
+        gap: 1rem;
+        margin: auto;
+        justify-content: center;
+        padding: 5px 8px;
+    }
+    .cartes{
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5px 8px;
+        gap: 1rem;
+        margin: auto;
+        
+       h2 {
+        font-family: "PT Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+       } 
+        a {
+            color: #000;
+        }
+        hr {
+            color: rgb(199, 199, 199);
+            width: 20%;
+            height: 2px;
+            &:hover {
+                width: 99%;
+            }
+        }
+        .card {
+            padding: 5px 8px;
+            background-color: #f3f5f9;
+            border-radius: 5px;
+            box-shadow: 0px 0px 200px #d5dbe7;
+            gap: 2rem;
+           
+            &:hover {
+                color: #0744af;
+                translate: 0 -10px;
+                transition: 0.2s;
+                
+                & hr {
+                    width: 100%;
+                    color: #0744af;
+                    transition: 0.9s;
+                }
+            }
+            .is-flex{
+                gap: 1rem;
+            }
+        }
+        .card:last-of-type{
+            color: #fff;
+            background:#000;
+            hr{
+                color: #fff;
+            }
+            a {
+                color: #fff;
+            }
+            
+        }
+    }
+    .bandana {
+        background-color: #0033a0;
+        min-height: 350px;
+        display: flex;
+        justify-content: center;
+        figure{
+            display: flex;
+            gap: 2rem;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            img{
+                object-fit: contain;
+                height: 120px;
+                width: auto;
+
+            }
+        }
+    }
     // Ce qui s'affiche pour les écrans petits
     @media screen and (max-width:576px) {
         .bloc {
@@ -213,6 +298,9 @@ main{
             .tag{
                 left: 50%;
             }
+        }
+        .cartes{
+            grid-template-columns: repeat(1, 1fr);
         }
     }
     // ce qui s'affiche pour les écrans moyens
