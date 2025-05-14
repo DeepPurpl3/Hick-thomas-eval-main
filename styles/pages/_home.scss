@@ -1,4 +1,3 @@
-
 main{
     margin-top: 50px;
     .hero-hns {
@@ -93,6 +92,83 @@ main{
 
         // }
     }
-        
-    
+ }
+.wrapp-global {
+    width: 90%;
+    margin: auto;
 }
+.good {
+    font-size: 25px;
+    a {
+        text-decoration: none;
+        color: #0744af;
+        font-size: 18px;
+        font-weight: 500;
+        font-size: 25px;
+        &:hover {
+            
+            color: #000;
+        }
+    }
+    .bloc {
+        width: 95%;
+        margin: auto;
+        gap: 5rem;
+    }
+    .txtgauche {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .txtdroite {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: relative;
+        text-align: center;
+        display: block;
+        .gimet {
+            align-self: flex-start;
+            position: absolute;
+            top: 0;
+            left: -5%;
+        }
+        .gimet2 {
+            align-self: flex-end;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        p{
+            width: 100%;
+            text-align: center;
+            margin-top: 5%;
+        }
+        
+    }
+    // Ce qui s'affiche pour les écrans petits
+    @media screen and (max-width:576px) {
+        .bloc {
+            flex-direction: column;
+            gap: 0;
+            
+        }
+        .gimet {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .gimet2 {
+            right: -20%;
+        }
+        
+    }
+    // ce qui s'affiche pour les écrans moyens
+    @media screen and (min-width:576px) and (max-width:960px) {
+       .bloc {
+        flex-direction: column;
+       } 
+    }
+}                    
