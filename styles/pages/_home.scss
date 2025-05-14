@@ -15,39 +15,13 @@ main{
             justify-content: center;
         }
     }
-    .hero2 { 
-        // background-color: ;
-        color: white;
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        .banner2{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
-            justify-content: center;
-            // .roundedpic{
-            //     border:  solid rgb(255, 255, 255);
-            //     overflow: hidden;
-            //     width: 250px;
-            //     clip-path:ellipse(50% 50%);
-            //     align-items: center;
-            //     position: relative;
-            //     margin-top: 30px;
 
-                
-    
-            }
-
-        }
-
-    }
     .legacy{
         display: flex;
         flex-direction: column;
         background-image: url(/img/bg-logo-faded-mark-400x400.png);
         background-repeat: no-repeat;
+        object-fit: cover;
     }
     .gridance{
         display: grid;
@@ -88,13 +62,22 @@ main{
 
         // }
     }
-
+}
 .wrapp-global {
     width: 90%;
     margin: auto;
 }
 .good {
-    font-size: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    h2 {
+        font-family: "poppins", sans-serif;
+        font-weight: 500;
+    }
+    h3 {
+        font-family: "poppins", sans-serif;
+        font-weight: 500;
+    }
     
     .bloc {
         margin: auto;
@@ -170,11 +153,12 @@ main{
             border-radius: 50%;
             .tag{
                 position: absolute;
-                background-color: #0744af;
+                // background-color: #0744af;
                 bottom: 5%;
                 left: 10%;
                 border-radius: 15px;
                 padding: 5px 5px;
+                background: linear-gradient(253deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgb(0 151 255 / 99%) 100%);
                 }
             img {
                 border-radius: 50%;
@@ -199,6 +183,7 @@ main{
         margin: auto;
         justify-content: center;
         padding: 5px 8px;
+        min-height: 450px;
     }
     .cartes{
         background-color: #fff;
@@ -215,6 +200,7 @@ main{
        } 
         a {
             color: #000;
+            min-height: 350px;
         }
         hr {
             color: rgb(199, 199, 199);
@@ -229,7 +215,7 @@ main{
             background-color: #f3f5f9;
             border-radius: 5px;
             box-shadow: 0px 0px 200px #d5dbe7;
-            gap: 2rem;
+            gap: 3rem;
            
             &:hover {
                 color: #0744af;
