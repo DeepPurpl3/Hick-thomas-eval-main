@@ -10,17 +10,14 @@ body {
         max-width: 100%;
     }   
 
-    .is-flex{
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        // justify-content: space-between;
-    }
-
     a {
         text-decoration: none;
     }
    
+    .is-flex{
+            display: flex;
+            align-items: center;
+        }
 }
 .ninja{
     display: none;
