@@ -278,6 +278,10 @@
         .samurai {
             display: none;
         }
+        .englobage {
+            flex-direction: column;
+            gap: 3rem;
+        }
     }
     // ce qui s'affiche pour les écrans moyens
     @media screen and (min-width:576px) and (max-width:960px) {
