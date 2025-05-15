@@ -1,5 +1,5 @@
 .wrapp-global {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .good {
@@ -219,15 +219,13 @@
     .lastbloc{
         background-image: url(/img/shutterstock_2314958033.jpg);
         color: #fff;
-        min-height: 100vh;
+        min-height: 700px;
         .englobage {
-            min-height: 100vh;
-            background-color: rgba(10, 63, 155, 0.575);
+            min-height: 700px;
+            background-color: rgba(10, 61, 150, 0.5); 
             padding: 5px 8px; 
             text-align: start;
-            align-items: center;
-              
-            
+            align-items: self-start;
             a {
                 color: #fff;
                 font-size: 25px;
@@ -236,10 +234,25 @@
                     text-decoration: underline;
                 }
             }
+            
+        }
+        .btn-blue {
+            border: #0F3447 solid 1px;
+            gap: 1rem;
+            background-color:#0744af ;
+            width: fit-content;
+            justify-content: space-around;
+            padding: 5px 10px;
+            margin-top: 5%;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
         }
     }
-    // Ce qui s'affiche pour les écrans petits
-    @media screen and (max-width:576px) {
+        // Ce qui s'affiche pour les écrans petits
+        @media screen and (max-width:576px) {
         .bloc {
             flex-direction: column;
             gap: 0;
@@ -278,4 +291,4 @@
             display: none;
         }
     }
-}                    
+}
